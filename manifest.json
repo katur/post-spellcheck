@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+  "name": "post-spellcheck",
+  "description": "Find out what you spelled wrong, after it's too late",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "post-spellcheck.png",
+    "default_popup": "post-spellcheck.html"
+  }
+}
