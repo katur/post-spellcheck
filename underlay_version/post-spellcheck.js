@@ -5,13 +5,14 @@ $(document).ready(function() {
 
 TEXT_INPUT_SELECTOR = "input[type=text], textarea, [contenteditable]"
 
+
 function initializeKeyListener() {
   $("body").on("input", TEXT_INPUT_SELECTOR, function(e) {
 		target = $(e.currentTarget);
-		value = getValueFromTarget(target);
-
 		underlay = target.prev();
-    updateText(underlay, value);
+
+		value = getValueFromTarget(target);
+    underlay.text(value);
   });
 }
 
@@ -23,9 +24,4 @@ function getValueFromTarget(target) {
   } else {
     return target.text();
   }
-}
-
-
-function updateText(el, value) {
-  el.text(value);
 }
