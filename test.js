@@ -11,7 +11,7 @@ function initializeKeyListener() {
 		value = getValueFromTarget(target);
 
 		underlay = target.prev();
-    underlay.text(value);
+    updateText(underlay, value);
   });
 }
 
@@ -23,4 +23,9 @@ function getValueFromTarget(target) {
   } else {
     return target.text();
   }
+}
+
+
+function updateText(el, value) {
+  el.text(value);
 }
