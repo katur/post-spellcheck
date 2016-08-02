@@ -12,14 +12,21 @@
 
   "content_scripts": [ {
     "matches": [
+      "file:///Users/*",
       "https://mail.google.com/*",
-      "https://hangouts.google.com/*",
-      "file:///Users/katherine/ka73r/rc/projects/postspellcheck/webpage/index.html"
+      "https://hangouts.google.com/*"
     ],
     "js": [
       "jquery.js",
       "post-spellcheck.js"
     ],
     "all_frames": true
-  } ]
+  } ],
+
+  "permissions": [
+    "tabs",
+    "file:///Users/*",
+    "https://mail.google.com/*",
+    "https://hangouts.google.com/*"
+  ]
 }
