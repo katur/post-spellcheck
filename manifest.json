@@ -6,7 +6,25 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "post-spellcheck.png",
-    "default_popup": "post-spellcheck.html"
-  }
+    "default_icon": "popup.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [ {
+    "matches": [
+      "https://mail.google.com/*",
+      "https://hangouts.google.com/*",
+      "file:///Users/katherine/ka73r/rc/projects/postspellcheck/webpage/index.html"
+    ],
+    "js": [
+      "jquery.js",
+      "post-spellcheck.js"
+    ],
+    "all_frames": true
+  } ],
+
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ]
 }
