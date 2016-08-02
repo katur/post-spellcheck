@@ -21,9 +21,5 @@
       "post-spellcheck.js"
     ],
     "all_frames": true
-  } ],
-
-  "permissions": [
-    "tabs"
-  ]
+  } ]
 }
