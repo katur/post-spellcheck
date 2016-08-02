@@ -14,7 +14,8 @@
     "matches": [
       "file:///Users/*",
       "https://mail.google.com/*",
-      "https://hangouts.google.com/*"
+      "https://hangouts.google.com/*",
+      "https://*.slack.com/*"
     ],
     "js": [
       "jquery.js",
@@ -27,6 +28,7 @@
     "tabs",
     "file:///Users/*",
     "https://mail.google.com/*",
-    "https://hangouts.google.com/*"
+    "https://hangouts.google.com/*",
+    "https://*.slack.com/*"
   ]
 }
