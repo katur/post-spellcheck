@@ -9,8 +9,3 @@ setInterval(function() {
 function disableSpellCheck() {
   $(TEXT_INPUT_SELECTOR).attr("spellcheck", false);
 }
-
-
-function enableSpellCheck() {
-  $(TEXT_INPUT_SELECTOR).attr("spellcheck", true);
-}

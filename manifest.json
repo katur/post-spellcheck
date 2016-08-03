@@ -6,7 +6,7 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "popup.png",
+    "default_icon": "images/popup.png",
     "default_popup": "popup.html"
   },
 
@@ -18,8 +18,8 @@
       "https://*.slack.com/*"
     ],
     "js": [
-      "jquery.js",
-      "post-spellcheck.js"
+      "js/jquery.js",
+      "js/disable-spellcheck.js"
     ],
     "all_frames": true
   } ],

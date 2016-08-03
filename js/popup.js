@@ -15,11 +15,11 @@ function activateButton() {
 
     // Defaults to active tab of current window
     chrome.tabs.executeScript({
-      file: "jquery.js",
+      file: "js/jquery.js",
       allFrames: true,
     }, function() {
       chrome.tabs.executeScript({
-        file: "test-script.js",
+        file: "js/button-triggered.js",
         allFrames: true,
       });
     });
