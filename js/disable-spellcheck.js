@@ -1,4 +1,4 @@
-TEXT_INPUT_SELECTOR = "input[type=text], textarea, [contenteditable]";
+const TEXT_INPUT_SELECTOR = "input[type=text], textarea, [contenteditable]";
 
 
 setInterval(function() {
