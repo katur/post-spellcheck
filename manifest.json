@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Post-Spellcheck",
+  "version": "1.0.0",
   "description": "Find out what you spelled wrong, after it's too late",
-  "version": "1.0",
 
   "browser_action": {
     "default_icon": "images/popup.png",
@@ -18,8 +18,7 @@
       "https://*.slack.com/*"
     ],
     "js": [
-      "js/jquery.js",
-      "js/content-script.js"
+      "bin/js/app.bundle.js"
     ],
     "all_frames": true
   } ],

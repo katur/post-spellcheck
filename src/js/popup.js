@@ -1,3 +1,6 @@
+const $ = require("jquery");
+
+
 $(document).ready(function() {
   activateButton();
 });
@@ -12,7 +15,7 @@ function activateButton() {
 
     // Defaults to active tab of current window
     chrome.tabs.executeScript({
-      file: "js/execute-script.js",
+      file: "bin/js/script.bundle.js",
       allFrames: true,
     });
   });
