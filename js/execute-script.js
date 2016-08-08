@@ -1,6 +1,7 @@
 $("body").css("background", "red");
 $("#to-populate").css("background", "yellow");
 initializeInputListener();
+printStuff();
 
 
 function initializeInputListener() {

@@ -12,7 +12,7 @@ function activateButton() {
 
     // Defaults to active tab of current window
     chrome.tabs.executeScript({
-      file: "js/button.js",
+      file: "js/execute-script.js",
       allFrames: true,
     });
   });

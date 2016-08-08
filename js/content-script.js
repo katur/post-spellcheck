@@ -9,3 +9,9 @@ setInterval(function() {
 function disableSpellCheck() {
   $(TEXT_INPUT_SELECTOR).attr("spellcheck", false);
 }
+
+
+function printStuff() {
+  console.log("poopie poop poop");
+  console.log("muxy");
+}

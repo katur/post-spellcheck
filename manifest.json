@@ -19,7 +19,7 @@
     ],
     "js": [
       "js/jquery.js",
-      "js/disable-spellcheck.js"
+      "js/content-script.js"
     ],
     "all_frames": true
   } ],
