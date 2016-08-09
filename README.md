@@ -7,5 +7,4 @@ npm install webpack -g
 npm init
 
 # Install webpack and jquery locally
-npm install --save-dev webpack
-npm install --save-dev jquery
+npm install jquery webpack sass-loader node-sass --save-dev

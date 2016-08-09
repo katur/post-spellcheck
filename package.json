@@ -2,19 +2,19 @@
   "name": "postspellcheck",
   "version": "1.0.0",
   "description": "Find out what you spelled wrong, after it's too late",
-
   "keywords": [
     "spelling",
     "anti-technology technology"
   ],
   "author": "Katherine Erickson",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/katur/post-spellcheck.git"
   },
   "devDependencies": {
     "jquery": "^3.1.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
     "webpack": "^1.13.1"
   }
 }
