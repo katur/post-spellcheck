@@ -1,2 +1,1 @@
-window.PostSpellCheck.colorStuff();
-window.PostSpellCheck.printStuff();
+window.PostSpellCheck.spellCheck();

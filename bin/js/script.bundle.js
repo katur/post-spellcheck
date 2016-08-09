@@ -44,8 +44,7 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	window.PostSpellCheck.colorStuff();
-	window.PostSpellCheck.printStuff();
+	window.PostSpellCheck.spellCheck();
 
 
 /***/ }

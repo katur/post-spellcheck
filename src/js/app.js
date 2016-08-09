@@ -1,5 +1,7 @@
 const $ = require("jquery");
 const TEXT_INPUT_SELECTOR = "input[type=text], textarea, [contenteditable]";
+const ADT_API_URL = "http://service.afterthedeadline.com/checkDocument";
+
 
 
 window.PostSpellCheck = {
@@ -24,19 +26,41 @@ window.PostSpellCheck = {
     _this = this;
 
     $("body").on("input", TEXT_INPUT_SELECTOR, function(e) {
-      target = $(e.currentTarget);
-      destination = $("#to-populate");
-      value = _this.getValueFromTarget(target);
+      var target = $(e.currentTarget);
+      var destination = $("#to-populate");
+      var value = _this.getValueFromElement(target);
       destination.text(value);
     });
   },
 
-  getValueFromTarget: function(target) {
-    value = target.val();
+  spellCheck: function() {
+    var val = this.getValueFromElement($("#to-populate"));
+
+    $.ajax({
+      type: 'POST',
+
+      url: ADT_API_URL,
+
+      data: {
+        data: val,
+      },
+
+      success: function(data) {
+        console.log(data);
+      },
+
+      error: function(e) {
+        console.log('Error with ADT: ' + e);
+      },
+    })
+  },
+
+  getValueFromElement: function(el) {
+    value = el.val();
     if (value) {
       return value;
     } else {
-      return target.text();
+      return el.text();
     }
   },
 

@@ -18,6 +18,7 @@
   "content_scripts": [ {
     "matches": [
       "file:///Users/*",
+      "http://localhost:8000/*",
       "https://mail.google.com/*",
       "https://hangouts.google.com/*",
       "https://*.slack.com/*",
@@ -31,9 +32,12 @@
 
   "permissions": [
     "tabs",
+    "http://service.afterthedeadline.com/*",
     "file:///Users/*",
+    "http://localhost:8000/*",
     "https://mail.google.com/*",
     "https://hangouts.google.com/*",
-    "https://*.slack.com/*"
+    "https://*.slack.com/*",
+    "https://zulip.com/*"
   ]
 }
