@@ -45,14 +45,17 @@ window.PostSpellCheck = {
         data: val,
       },
 
-      success: function(data) {
-        console.log(data);
+      success: function(xml) {
+        $(xml).find("results").each(function() {
+          var error = $(this).text();
+          $("#results").append(error);
+        });
       },
 
       error: function(e) {
         console.log('Error with ADT: ' + e);
       },
-    })
+    });
   },
 
   getValueFromElement: function(el) {
